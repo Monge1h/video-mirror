@@ -1,0 +1,6 @@
+{
+  "manifest_version": 3,
+  "name": "yt-video-mirror",
+  "description": "Chrome extension that rotate 180 degrees yt videos",
+  "version": "1.0"
+}
