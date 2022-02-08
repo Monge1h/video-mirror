@@ -1,6 +1,7 @@
 chrome.runtime.onMessage.addListener(gotMessage);
 
-function gotMessage(){
+function gotMessage(message){
+  console.log(message)
   let video = document.getElementsByClassName("html5-video-container")
   let style = video[0].getAttribute('style')
   if(!style){

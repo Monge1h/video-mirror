@@ -10,6 +10,6 @@ function rotate(){
   chrome.tabs.query(params,gotTab);
 
   function gotTab(tabs){
-    chrome.tabs.sendMessage(tabs[0].id)
+    chrome.tabs.sendMessage(tabs[0].id,"rotate")
   }
 }
