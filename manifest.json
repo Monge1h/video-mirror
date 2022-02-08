@@ -3,8 +3,14 @@
   "name": "yt-video-mirror",
   "description": "Chrome extension that rotate yt videos 180 degrees",
   "version": "1.0",
-  "permissions": ["storage","activeTab","declarativeContent"],
+  "permissions": ["tabs"],
   "action":{
 	  "default_popup": "popup.html"
-  }
+  },
+  "content_scripts": [ 
+        { 
+            "matches": [ "http://*/*", "https://*/*"],
+            "js": [ "contentScript.js" ]
+        }
+      ]
 }
